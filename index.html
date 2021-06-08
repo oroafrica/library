@@ -18,7 +18,12 @@ h3{font-family: 'Gochi Hand', cursive;text-alignment:center;font-size:20px}
 </audio>
 </div>
 <script type="text/javascript">
-window.onload=()=>{document.getElementById("my_audio").play();}
+/* window.onload=()=>{document.getElementById("my_audio").play();} */
+  window.onload = function () {
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+         document.getElementById("my_audio").play();
+        localStorage.setItem("hasCodeRunBefore", true);
+    }
 </script>
 </body>
 </html>
