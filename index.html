@@ -12,6 +12,7 @@ h3{font-family: 'Gochi Hand', cursive;text-alignment:center;font-size:20px}
 <body>
 <div>
 <h3>Baby Sam's heartbeat....</h3>
+  <iframe src="./sounds/silence.mp3" allow="autoplay" style="display:none" id="frameAudio" > </iframe>
   <audio controls loop autoplay>
   <source  src="./sounds/heartbeat.mp3" id="my_audio" type="audio/mpeg">
   Your browser does not support the audio tag.
@@ -23,7 +24,7 @@ window.onload=()=>{document.getElementById("my_audio").play();}
     if (localStorage.getItem("hasCodeRunBefore") === null) {
          document.getElementById("my_audio").play();
         localStorage.setItem("hasCodeRunBefore", true);
-    }
-</script> */
+    }*/
+</script> 
 </body>
 </html>
